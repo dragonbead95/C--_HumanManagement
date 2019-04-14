@@ -6,9 +6,15 @@
 class PermanentEmployee : Employee
 {
 private:
-	int Salary;	//월급
+	int m_nSalary;	//월급
 public:
-	int GetMoney() const;
+	PermanentEmployee(string strName, string strGender, string strBirth, string strPhone,
+		string strRank, string strContract, int nSalary);
+	int GetSalary() const
+	{
+		return m_nSalary;
+	}
+	virtual void ShowEmpInfo() const;
 };
 
 #endif // !__PERMANENT_EMPLOYEE_H_

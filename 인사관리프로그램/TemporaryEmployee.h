@@ -6,9 +6,16 @@
 class TemporaryEmployee : Employee
 {
 private:
-	int TimeWork;	//시급
+	int m_nTimeWork;	//시급
 public:
-	int GetMoney() const;
+	TemporaryEmployee(string strName, string strGender, string strBirth, string strPhone,
+		string strRank, string strContract, int nTimeWork);
+	int GetTimeWork() const
+	{
+		return m_nTimeWork;
+	}
+	virtual void ShowEmpInfo() const;
+
 };
 
 #endif // !__TEMPORARY_EMPLOYEE_

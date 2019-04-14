@@ -23,3 +23,46 @@
 2.직원 추가
 3.직원 수정
 4.직원 삭제
+
+
+class Employee{
+private: 
+	이름
+	성별
+	생년월일
+	연락처
+	직급
+public:
+	생성자(이름,성별,생년월일,연락처,직급)
+	virtual get_이름,성별,생년월일,연락처,직급
+}
+
+class PermanentEmployee : public Employee
+{
+private:
+	월급
+public:
+	생성자(이름,성별,생년월일,연락처,직급) : Employee(이름,성별,생년월일,연락처,직급), my월급(월급)
+	virtual get_월급
+}
+
+class Temperary : public Employee
+{
+private:
+	시급
+public:
+	생성자(이름,성별,생년월일,연락처,직급) : Employee(이름,성별,생년월일,연락처,직급), my시급(시급)	
+	virtual get_시급
+}
+
+class EmployeeHandler
+{
+private:
+	Employee * empList[50];
+	int empNum;
+public:
+	직원추가(정규직 or 비정규직)
+	직원검색()
+	직원정보수정()
+	직원삭제()
+}

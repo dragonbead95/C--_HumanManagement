@@ -122,6 +122,14 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\메모.txt" />
+    <Text Include="일지.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PermanentEmployee.cpp" />
+    <ClCompile Include="TemporaryEmployee.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
